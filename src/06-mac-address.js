@@ -13,7 +13,7 @@
  *
  */
 function isMAC48Address(n) {
-  const check = /[0-9a-f]{2}(:[0-9a-f]{2}){5}/.test(n);
+  const check = /^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/.test(n);
   return check;
 }
 
